@@ -7,6 +7,9 @@ body, html {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
 }
+body {
+  margin: 0;
+}
 
 /*=======NAVIGATION STUFF=======*/
 a:link, a:visited, a:hover {
@@ -16,7 +19,7 @@ a:link, a:visited, a:hover {
 
 #navbar-container {
   position: absolute;
-  right: 0;
+  right: 10px;
   margin-top: 100px;
 }
 
@@ -36,6 +39,8 @@ a:link, a:visited, a:hover {
 }
 
 .nav-item {
+  border: none;
+  font-size: .8em;
   background-color: #b2b2b2;
   padding: 20px;
 }
@@ -253,8 +258,13 @@ a:link, a:visited, a:hover {
 
 /*=======FOOTER=======*/
 #footer {
+  font-weight: lighter;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 600px;
-  background-color: #141516;
+  background-color: #222325;
 }
 
 .footer-paragraph {
@@ -262,5 +272,17 @@ a:link, a:visited, a:hover {
 }
 
 #footer-chevron {
+  margin-bottom: 200px;
+  height: 75px;
   transform:rotate(180deg);
+}
+
+/*=======TABLET BREAKPOINT=======*/
+@media only screen and (min-width: 600px) {
+
+}
+
+/*=======DESKTOP BREAKPOINT=======*/
+@media only screen and (min-width: 768px) {
+
 }
