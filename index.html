@@ -9,20 +9,127 @@
   <div id="page-container">
     <div id="welcome" class="section">
       <div id="top-bar">
-        <span>TEAM ONE</span>
-        <img src="./img/menu-button-of-three-horizontal-lines.svg" alt="hamburger">
+        <span id="team-one">TEAM ONE</span>
+        <img id="hamburger" src="./img/menu-button-of-three-horizontal-lines.svg" alt="hamburger">
       </div>
-      <h1>WELCOME TO TEAM ONE</h1>
-      <span>We ARE AN AWESOME GROUP OF DESIGNERS AND DEVELOPERS</span>
-      <a href="#about">
-        <img src="./img/double-chevron-circle-outline.png" alt="chevron">
-      </a>
+      <div id="navbar-container" class="navbar hidden">
+        <ul id="navbar">
+          <li>
+            <a class="nav-item" href="#">HOME</a>
+          </li>
+          <li>
+            <a class="nav-item" href="#">ABOUT</a>
+          </li>
+          <li>
+            <a class="nav-item" href="#">SERVICE</a>
+          </li>
+          <li>
+            <a class="nav-item" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div id="intro-container">
+        <h1 id="intro-head" class="intro-item">WELCOME TO TEAM ONE</h1>
+        <span id="intro-paragraph" class="intro-item">WE ARE AN AWESOME GROUP OF DESIGNERS AND DEVELOPERS</span>
+        <a href="#footer" class="intro-item">
+          <img id="chevron" src="./img/double-chevron-circle-outline.png" alt="chevron">
+        </a>
+      </div>
     </div>
-    <div id="about" class="section"></div>
-    <div id="services" class="section"></div>
-    <div id="contact" class="section"></div>
+
+    <div id="about" class="section">
+      <div class="section-intro">
+        <h1>ABOUT US</h1>
+        <img class="down-arrow" src="./img/down-arrow.svg" alt="down-arrow">
+      </div>
+      <div class="info">
+        <div class="info-interior">
+          <h2 class="info-name info-item">ANNA HANACECK</h2>
+          <span class="info-title info-item">Pixel Crafter</span>
+          <img class="team-pic info-item" src="./img/team-pic.png" alt="team-pic">
+        </div>
+      </div>
+      <div class="info">
+        <div class="info-interior">
+          <h2 class="info-name info-item">MAURA DANIELS</h2>
+          <span class="info-title info-item">HTML Guru</span>
+          <img class="team-pic info-item" src="./img/team-pic.png" alt="team-pic">
+        </div>
+      </div>
+      <div class="info">
+        <div class="info-interior">
+          <h2 class="info-name info-item">JACK BRIANE</h2>
+          <span class="info-title info-item">CSS Ninja</span>
+          <img class="team-pic info-item" src="./img/team-pic.png" alt="team-pic">
+        </div>
+      </div>
+      <div class="info">
+        <div class="info-interior">
+          <h2 class="info-name info-item">TOM PETTERSON</h2>
+          <span class="info-title info-item">JavaScript Master</span>
+          <img class="team-pic info-item" src="./img/team-pic.png" alt="team-pic">
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="section">
+      <div class="section-intro services-intro">
+        <h1>OUR SERVICES</h1>
+        <img class="down-arrow" src="./img/down-arrow.svg" alt="down-arrow">
+      </div>
+      <div class="services-container">
+        <img class="service-img" src="./img/service-icon-1.png" alt="print"/>
+        <span class="service-span">PRINT DESIGN</span>
+        <p class="service-paragraph">Lorem ipsum dolor sit amet, dicta distinctio ex facere fugiat in iusto minima minus molestias, totam veritatis.</p>
+      </div>
+      <div class="services-container">
+        <img class="service-img" src="./img/service-icon-2.png" alt="design"/>
+        <span class="service-span">WEB DESIGN</span>
+        <p class="service-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur deserunt doloremque eius, voluptates voluptatum?</p>
+      </div>
+      <div class="services-container">
+        <img class="service-img" src="./img/service-icon-3.png" alt="photography"/>
+        <span class="service-span">PHOTOGRAPHY</span>
+        <p class="service-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aspernatur laborum magnam, pariatur placeat sed similique soluta veritatis.</p>
+      </div>
+      <div class="services-container">
+        <img class="service-img" src="./img/service-icon-4.png" alt="development">
+        <span class="service-span">WEB DEVELOPMENT</span>
+        <p class="service-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, dolores obcaecati pariatur, quae recusandae.</p>
+      </div>
+    </div>
+
+    <div id="contact" class="section">
+      <div class="section-intro">
+        <h1>GET IN TOUCH</h1>
+        <img class="down-arrow" src="./img/down-arrow.svg" alt="down-arrow">
+      </div>
+      <div id="form-wrapper">
+        <form action="/" method="post" id="form-container">
+          <label class="label" for="name">Name</label>
+          <input id="name" type="text" placeholder="Your Name"/>
+          <label class="label" for="email">Email</label>
+          <input id="email" type="text" placeholder="Your Email"/>
+          <label class="label" for="subject">Subject</label>
+          <input id="subject" type="text" placeholder="Subject"/>
+          <label class="label" for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+          <div id="button-container">
+            <button id="form-button">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </body>
-<footer id=""></footer>
+<footer id="footer">
+  <img id="footer-chevron" src="./img/double-chevron-circle-outline.png" alt="">
+  <p class="footer-paragraph">
+    Team One
+  </p>
+  <p class="footer-paragraph">
+    We are an awesome team of designers and developers.
+  </p>
+</footer>
 <script src="logic.js"></script>
 </html>
