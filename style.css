@@ -1,0 +1,18 @@
+body, html {
+  box-sizing: border-box;
+
+}
+
+#top-bar {
+  height: 50px;
+  border-bottom: 1px solid grey;
+}
+
+.section {
+  display: flex;
+}
+
+#welcome {
+  background-image: url('./img/intro_background.jpg');
+  color: #fff;
+}
